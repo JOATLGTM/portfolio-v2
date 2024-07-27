@@ -49,7 +49,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently mastering more libraries and frameworks such as Next. Three.js and GSAP.",
+        title: "Currently mastering more libraries and frameworks such as React.js, Next.js, Three.js and GSAP.",
         description: "What am currently doing?",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -173,28 +173,28 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
+        title: "Software Engineer at Gap",
         desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
         className: "md:col-span-2",
-        thumbnail: "/exp1.svg",
+        thumbnail: "/gaplogo.png",
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+        title: "React developer at Blended Edge",
+        desc: "Designed and developed an user interface in Shopify to seamlessly connect APIs.",
         className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp2.svg",
+        thumbnail: "/blendededge_logo.jpeg",
     },
     {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+        title: "Software Engineer at Beam Dental",
+        desc: "Developed single paged applications using React and Ruby on Rails. Go team Space Whales",
         className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
+        thumbnail: "/beambenefits_logo.jpeg",
     },
     {
         id: 4,
-        title: "Lead Frontend Developer",
+        title: "Frontend Developer at Wired Campaigns",
         desc: "Developed and maintained user-facing features using modern frontend technologies.",
         className: "md:col-span-2",
         thumbnail: "/exp4.svg",
