@@ -81,19 +81,19 @@ export const projects = [
 	},
 	{
 		id: 2,
-		title: "Remix Expense Project",
+		title: "Metro Nails Salon",
+		des: "Get your best nail services in London Ohio",
+		img: "/metronails.png",
+		iconLists: ["/next.svg"],
+		link: "https://www.metronailsforya.com/",
+	},
+	{
+		id: 3,
+		title: "Amelia Nail Salon",
 		des: "Get your best nail services in Columbus Ohio",
 		img: "/nailsalon.png",
 		iconLists: ["/next.svg"],
 		link: "https://www.amelianailscolumbus.com/",
-	},
-	{
-		id: 3,
-		title: "Remix Expense Project",
-		des: "An Expense list with CRUD abilities using Remix.js",
-		img: "/remix-project.png",
-		iconLists: ["/remix-run-line.svg"],
-		link: "https://remix-project-silk.vercel.app/",
 	},
 ];
 
