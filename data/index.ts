@@ -81,19 +81,19 @@ export const projects = [
 	},
 	{
 		id: 2,
-		title: "Metro Nails Salon",
-		des: "Get your best nail services in London Ohio",
-		img: "/metronails.png",
+		title: "Candlestick Pattern Flashcards",
+		des: "Learn candlesticks on the go",
+		img: "/candlesticks.png",
 		iconLists: ["/next.svg"],
-		link: "https://www.metronailsforya.com/",
+		link: "https://candlestick-patterns-flashcards.vercel.app/",
 	},
 	{
 		id: 3,
-		title: "Amelia Nail Salon",
-		des: "Get your best nail services in Columbus Ohio",
-		img: "/nailsalon.png",
+		title: "Caliber",
+		des: "Have AI search while you apply with a human touch",
+		img: "/caliber.png",
 		iconLists: ["/next.svg"],
-		link: "https://www.amelianailscolumbus.com/",
+		link: "https://caliber-sable.vercel.app/",
 	},
 ];
 
