@@ -66,6 +66,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
             size: number;
             order: number;
             color: (t: number) => string;
+            hexColor: string;
             lat: number;
             lng: number;
         }[]
@@ -118,11 +119,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
         let points = [];
         for (let i = 0; i < arcs.length; i++) {
             const arc = arcs[i];
-            const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
+            const rgb = hexToRgb(arc.color);
+            if (!rgb) continue;
             points.push({
                 size: defaultProps.pointSize,
                 order: arc.order,
                 color: (t: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${1 - t})`,
+                hexColor: arc.color,
                 lat: arc.startLat,
                 lng: arc.startLng,
             });
@@ -130,6 +133,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
                 size: defaultProps.pointSize,
                 order: arc.order,
                 color: (t: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${1 - t})`,
+                hexColor: arc.color,
                 lat: arc.endLat,
                 lng: arc.endLng,
             });
@@ -186,8 +190,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
             .arcDashAnimateTime((e) => defaultProps.arcTime);
 
         globeRef.current
-            .pointsData(data)
-            .pointColor((e) => (e as { color: string }).color)
+            .pointsData(globeData)
+            .pointColor((e) => (e as { hexColor: string }).hexColor)
             .pointsMerge(true)
             .pointAltitude(0.0)
             .pointRadius(2);
