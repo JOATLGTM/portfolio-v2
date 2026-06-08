@@ -95,6 +95,30 @@ export const projects = [
 		iconLists: ["/next.svg"],
 		link: "https://caliber-sable.vercel.app/",
 	},
+	{
+		id: 4,
+		title: "One Shot HTX",
+		des: "One Shot Pocha in Houston",
+		img: "/oneshot.png",
+		iconLists: ["/next.svg"],
+		link: "https://oneshothtx.vercel.app/",
+	},
+	{
+		id: 5,
+		title: "NONCHALANT",
+		des: "Supper club interest form",
+		img: "/nonchalant.png",
+		iconLists: ["/next.svg"],
+		link: "https://nonchalant-seven.vercel.app/",
+	},
+	{
+		id: 6,
+		title: "Vijay's Marketing Portfolio",
+		des: "self explanatory",
+		img: "/vijay.png",
+		iconLists: ["/next.svg"],
+		link: "https://vijay-portfolio-nine-pi.vercel.app/",
+	},
 ];
 
 export const testimonials = [
